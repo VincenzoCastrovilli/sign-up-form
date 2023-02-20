@@ -6,11 +6,12 @@ body {
   box-sizing: border-box;
 }
 
-.right {
-  width: 30vw;
+.left {
+  width: 40vw;
   background-image: url('https://ecomerid.it/wp-content/uploads/2020/11/Trattamento-acqua-piscine-Culligan-Ischia.jpg');
   flex: none;
   position: relative;
+  background-size: cover;
 }
 
 .logo {
@@ -24,3 +25,50 @@ body {
   position: absolute;
   bottom: 0;
 }
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  padding: 80px 120px 50px 40px;
+  font-size: 22px;
+}
+
+.form-container {
+  padding-right: 120px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+button {
+  width: 200px;
+}
+
+.login {
+  padding-left: 40px;
+}
+
+input {
+  padding: 5px;
+}
+
