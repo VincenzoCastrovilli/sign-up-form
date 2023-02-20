@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.right {
+  width: 30vw;
+  background-image: url('https://ecomerid.it/wp-content/uploads/2020/11/Trattamento-acqua-piscine-Culligan-Ischia.jpg');
+  flex: none;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 20vh;
+  color: white;
+  background-color: rgba(128, 128, 128, 0.7);
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+}
