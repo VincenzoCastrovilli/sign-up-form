@@ -1,13 +1,15 @@
 body {
   display: flex;
-  height: 100vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Bitter', serif;
+  background-color: rgb(248, 248, 248);
 }
 
 .left {
   width: 40vw;
+  height: 100vh;
   background-image: url('https://ecomerid.it/wp-content/uploads/2020/11/Trattamento-acqua-piscine-Culligan-Ischia.jpg');
   flex: none;
   position: relative;
@@ -17,13 +19,34 @@ body {
 .logo {
   position: absolute;
   top: 20vh;
-  color: white;
-  background-color: rgba(128, 128, 128, 0.7);
+  width: 100%;
+  height: 20vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.title {
+  color: black;
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+img {
+  width: 120px;
+  height: 120px;
 }
 
 .copyright {
   position: absolute;
-  bottom: 0;
+  width: 100%;
+  bottom:0;
+  color: black;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-weight: 500;
 }
 
 .right {
@@ -32,43 +55,77 @@ body {
 }
 
 .description {
-  padding: 80px 120px 50px 40px;
+  padding: 60px 120px 30px 40px;
   font-size: 22px;
+  font-weight: 400;
 }
 
 .form-container {
   padding-right: 120px;
   padding-left: 40px;
   padding-bottom: 40px;
+  box-shadow: 8px 3px 5px rgb(158, 157, 157);
+  background-color: white
 }
 
 form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  font-size: 30px;
+  font-weight: 500;
+  padding-top: 10px;
+  
 }
 
 .controls {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 30px;
+  
 }
 
 .input {
   display: flex;
   flex-direction: column;
-  width: 280px;
+  width: 270px;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 button {
   width: 200px;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 7px;
+  border-color: rgb(25, 137, 241);
+  color: white;
+  background-color: rgb(25, 137, 241);
+  box-shadow: 3px 3px 3px rgb(158, 157, 157);
 }
 
 .login {
   padding-left: 40px;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
 input {
   padding: 5px;
+  border:1px solid rgb(229, 231, 235);
+  border-radius: 5px;
+  outline-color: rgb(229, 231, 235);
 }
 
+input:focus {
+  outline-color: rgb(25, 137, 241);
+  transition-duration: 0.3s;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(25, 137, 241);
+  font-weight: 500;
+}
